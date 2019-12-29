@@ -4,6 +4,7 @@
 body {
   margin: 0;
   height: 100vh;
+  width: 100vw;
   background: linear-gradient(60deg, #23185c 0%, #29b7c1 100%); }
 
 .clock {
