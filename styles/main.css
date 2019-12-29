@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(60deg, #23185c 0%, #29b7c1 100%); }
+
+.clock {
+  display: block;
+  position: relative;
+  margin: 30px auto;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 1px solid #6c567b;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); }
+  .clock__center {
+    display: block;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    background-color: #a4d7e1;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%); }
+  .clock__arrow {
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+    .clock__arrow_second {
+      width: 290px;
+      height: 3px;
+      background-color: #513763;
+      border-radius: 1.5px;
+      -webkit-animation: time linear 60s infinite;
+              animation: time linear 60s infinite; }
+    .clock__arrow_minute {
+      width: 290px;
+      height: 7px;
+      border-radius: 3.5px;
+      background-color: #5ca0d3;
+      -webkit-animation: time linear 3600s infinite;
+              animation: time linear 3600s infinite; }
+    .clock__arrow_hour {
+      width: 200px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #a4d7e1;
+      -webkit-animation: time linear 43200s infinite;
+              animation: time linear 43200s infinite; }
+
+@-webkit-keyframes time {
+  0% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg); } }
+
+@keyframes time {
+  0% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  100% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg); } }
+
+/*# sourceMappingURL=main.css.map */
